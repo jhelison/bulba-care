@@ -11,15 +11,15 @@ const Footer = (props) => {
         <footer>
             <div className="d-flex">
                 <a className="social-container d-flex just-content-center align-items-center"
-                href="https://github.com/jhelison/bulba-care/" target="_blank">
+                href="https://github.com/jhelison/bulba-care/" target="_blank" rel="noopener noreferrer">
                     <AiFillGithub size={50}/>
                 </a>
                 <a className="social-container d-flex just-content-center align-items-center ml-20"
-                href="https://www.linkedin.com/in/jhelison-uchoa-421ba6120/" target="_blank">
+                href="https://www.linkedin.com/in/jhelison-uchoa-421ba6120/" target="_blank" rel="noopener noreferrer">
                     <AiFillLinkedin size={50}/>
                 </a>
                 <a className="social-container d-flex just-content-center align-items-center ml-20"
-                href="https://www.figma.com/file/2kaMSBSiuaHP7OZeZzr98d/Landing-Page?node-id=3%3A137" target="_blank">
+                href="https://www.figma.com/file/2kaMSBSiuaHP7OZeZzr98d/Landing-Page?node-id=3%3A137" target="_blank" rel="noopener noreferrer">
                     <FaFigma size={50}/>
                 </a>
                 <a className="social-container d-flex just-content-center align-items-center ml-20"
