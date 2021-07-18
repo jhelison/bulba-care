@@ -15,6 +15,15 @@ const Main = (props) => {
     const [userEmail, setUserEmail] = useState("")
 
     const send = () => {
+        if(!userName.trim()){
+            alert("Ops, parece que você não colocou seu nome")
+            return
+        }
+        if(!userEmail.trim()){
+            alert("Ops, você esqueceu seu email")
+            return
+        }
+
         localStorage.setItem('userName', userName)
         localStorage.setItem('userEmail', userEmail)
         history.push("/subscribed")
