@@ -36,12 +36,13 @@ const Main = (props) => {
                 </span>
             </div>
 
+            {/* Price cards */}
             <div className="mt-40 d-flex just-content-center align-items-center">
                 {/* prince-card-1 */}
                 <div className="price-card-s d-flex align-items-center flex-column">
                     <h4 className="mt-20">Bulbassauro</h4>
 
-                    <div className="price-card-img-bg bg-gradient mt-40 d-flex just-content-center align-items-center">
+                    <div className="price-card-img-bg bg-gradient mt-20 d-flex just-content-center align-items-center">
                         <img
                             src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/bulbasaur.png"
                             alt="bulbasaur-color"
@@ -114,7 +115,7 @@ const Main = (props) => {
                 <div className="price-card-s d-flex align-items-center flex-column">
                     <h4 className="mt-20">Venusaur</h4>
 
-                    <div className="price-card-img-bg bg-gradient mt-40 d-flex just-content-center align-items-center">
+                    <div className="price-card-img-bg bg-gradient mt-20 d-flex just-content-center align-items-center">
                         <img
                             src="https://img.pokemondb.net/sprites/ruby-sapphire/normal/venusaur.png"
                             alt="bulbasaur-color"
@@ -144,6 +145,25 @@ const Main = (props) => {
                         <span className="price-sub">Escolher plano</span>
                     </div>
                 </div>
+            </div>
+
+            <div className="subscribe-container bg-white d-flex align-items-center flex-column">
+                <img
+                    src="https://art.pixilart.com/cfc34f3d47feafb.png"
+                    alt="bulbasaur-gen1"
+                />
+                <h2 className="mt-80">Se inscreva!</h2>
+                <div className="subtitle mt-10">
+                    <span>
+                        Não perca nenhuma novidade e promoção!
+                    </span>
+                </div>
+                <input className="custom-input mt-10" placeholder="Nome"></input>
+                <input className="custom-input mt-10" placeholder="Email"></input>
+                <div className="price-card-button bg-blue2 mt-10 d-flex just-content-center align-items-center">
+                    <span className="price-sub">Enviar</span>
+                </div>
+                
             </div>
         </div>
     )
