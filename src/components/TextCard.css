@@ -1,0 +1,7 @@
+.text-card-icon-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: var(--bulba-blue2);
+    color: var(--background-white);
+}

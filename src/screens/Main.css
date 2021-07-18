@@ -1,9 +1,75 @@
 .main-content {
-    margin-top: 80px;
+    padding-top: 80px;
+    background-color: var(--background);
+    /* height: calc(100vh - var(--header-height)); */
+    /* overflow: auto; */
+
+    box-sizing: border-box;
+}
+
+.main-content {
+    --landing-card-width: 690px;
+    --landing-card-heigth: 560px;
+
+    --lading-card-img-width: 400px;
+    --lading-card-vertical-padding: 60px;
 }
 
 .landing-card {
-    width: 690px;
-    height: 560px;
+    width: var(--landing-card-width);
+    height: var(--landing-card-heigth);
     background-color: var(--bulba-green1);
+    border-radius: 60px;
+    padding-top: var(--lading-card-vertical-padding);
+    padding-bottom: var(--lading-card-vertical-padding);
+    padding-left: 40px;
+
+    position: relative;
+    box-sizing: border-box;
+}
+
+.subtitle {
+    width: 260px;
+    text-align: center;
+}
+
+.landing-card img {
+    position: absolute;
+    height: auto;
+    width: var(--lading-card-img-width);
+    image-rendering: pixelated;
+    right: calc(var(--lading-card-img-width) / -2);
+    top: calc((var(--landing-card-heigth) / 2) - (var(--lading-card-img-width) / 2));
+    /* top: 560px; */
+}
+
+.message-price-width {
+    width: 360px;
+    text-align: center;
+}
+
+.price-card-s {
+    width: 320px;
+    height: 530px;
+    background-color: var(--background-white);
+}
+
+.price-card-l {
+    width: 350px;
+    height: 580px;
+    background: var(--card-gradient);
+}
+
+.price-card-img-bg {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    background: var(--card-gradient);
+}
+
+.price-card-img-bg img {
+    position: absolute;
+    height: auto;
+    width: 200px;
+    image-rendering: pixelated;
 }
