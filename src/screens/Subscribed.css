@@ -1,0 +1,19 @@
+.subscribed-content {
+    width: 100vw;
+    height: 100vh;
+
+    user-select: none;
+}
+
+.subscribed-content img {
+    position: absolute;
+    filter: blur(5px);
+    width: 600px;
+    height: 600px;
+    opacity: 0.1;
+
+    top: calc((100% / 2) - 300px);
+    left: calc((100% / 2) - 300px);
+
+    z-index: 1;
+}
