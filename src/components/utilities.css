@@ -79,6 +79,9 @@
     padding-left: 10px;
 }
 
+.self-flex-start {
+    justify-self: flex-start;
+}
 
 .flex-column {
     flex-direction: column;
