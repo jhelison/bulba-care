@@ -1,6 +1,7 @@
 import React from "react"
 import { Switch, Route, Redirect } from "react-router-dom"
 
+
 import Subscribed from "./screens/Subscribed"
 
 import Header from "./components/template/Header"

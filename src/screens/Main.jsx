@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import "./Main.css"
+import { useHistory } from "react-router-dom"
 
 import TextCard from "../components/TextCard"
 import TextCardSmall from "../components/TextCardSmall"
@@ -8,6 +9,17 @@ import daycare from "../assets/day-care.png"
 import money from "../assets/money.svg"
 
 const Main = (props) => {
+    let history = useHistory()
+
+    const [userName, setUserName] = useState("")
+    const [userEmail, setUserEmail] = useState("")
+
+    const send = () => {
+        localStorage.setItem('userName', userName)
+        localStorage.setItem('userEmail', userEmail)
+        history.push("/subscribed")
+    }
+
     return (
         <div className="main-content d-flex just-content-center align-items-center flex-column">
             <div className="landing-card">
@@ -154,16 +166,26 @@ const Main = (props) => {
                 />
                 <h2 className="mt-80">Se inscreva!</h2>
                 <div className="subtitle mt-10">
-                    <span>
-                        Não perca nenhuma novidade e promoção!
-                    </span>
+                    <span>Não perca nenhuma novidade e promoção!</span>
                 </div>
-                <input className="custom-input mt-10" placeholder="Nome"></input>
-                <input className="custom-input mt-10" placeholder="Email"></input>
-                <div className="price-card-button bg-blue2 mt-10 d-flex just-content-center align-items-center">
+                <input
+                    className="custom-input mt-10"
+                    placeholder="Nome"
+                    value={userName}
+                    onChange={(e) => setUserName(e.target.value)}
+                ></input>
+                <input
+                    className="custom-input mt-10"
+                    placeholder="Email"
+                    value={userEmail}
+                    onChange={(e) => setUserEmail(e.target.value)}
+                ></input>
+                <div
+                    className="price-card-button bg-blue2 mt-10 d-flex just-content-center align-items-center"
+                    onClick={send}
+                >
                     <span className="price-sub">Enviar</span>
                 </div>
-                
             </div>
         </div>
     )
