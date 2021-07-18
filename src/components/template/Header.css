@@ -1,0 +1,30 @@
+header {
+    height: 40px;
+    box-shadow: 0px 4px 11px -6px rgba(0, 0, 0, 0.25);
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--background-white);
+}
+
+header h3 {
+    user-select: none;
+}
+
+.header-buttons {
+    width: 195px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.header-buttons:hover {
+    background-color: #83EEC5;
+}
+
+.header-button-selected {
+    background-color: var(--bulba-blue2);
+}

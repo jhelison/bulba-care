@@ -1,0 +1,9 @@
+.main-content {
+    margin-top: 80px;
+}
+
+.landing-card {
+    width: 690px;
+    height: 560px;
+    background-color: var(--bulba-green1);
+}
