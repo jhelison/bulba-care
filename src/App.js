@@ -1,19 +1,14 @@
 import React from 'react'
+import { HashRouter } from "react-router-dom"
 import "./App.css"
 
-import Header from './components/template/Header';
-import Main from './screens/Main';
-import Footer from './components/template/Footer';
-import Subscribed from './screens/Subscribed';
+import Routes from './Routes'
 
 function App() {
     return (
-        <div className="App">
-            {/* <Header />
-            <Main />
-            <Footer /> */}
-            <Subscribed/>
-        </div>
+        <HashRouter>
+            <Routes />
+        </HashRouter>
     )
 }
 
