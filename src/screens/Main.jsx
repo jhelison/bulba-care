@@ -58,10 +58,11 @@ const Main = (props) => {
             </div>
 
             {/* Price cards */}
-            <div className="mt-40 d-flex just-content-center align-items-center">
+            <div className="position-relative mt-40 d-flex just-content-center align-items-center">
+                <PromotionTag />
                 {/* prince-card-1 */}
                 <div className="price-card-s d-flex align-items-center flex-column">
-                    <h4 className="mt-20">Bulbassauro</h4>
+                    <h4 className="mt-20">Pacote Bulbassauro</h4>
 
                     <div className="price-card-img-bg bg-gradient mt-20 d-flex just-content-center align-items-center">
                         <img
@@ -96,7 +97,7 @@ const Main = (props) => {
 
                 {/* prince-card-2 */}
                 <div className="price-card-l d-flex align-items-center flex-column">
-                    <h4 className="mt-20">Ivysaur</h4>
+                    <h4 className="mt-20">Pacote Ivysaur</h4>
 
                     <div className="price-card-img-bg bg-white mt-40 d-flex just-content-center align-items-center">
                         <img
@@ -134,7 +135,7 @@ const Main = (props) => {
 
                 {/* prince-card-3 */}
                 <div className="price-card-s d-flex align-items-center flex-column">
-                    <h4 className="mt-20">Venusaur</h4>
+                    <h4 className="mt-20">Pacote Venusaur</h4>
 
                     <div className="price-card-img-bg bg-gradient mt-20 d-flex just-content-center align-items-center">
                         <img
@@ -208,6 +209,14 @@ const PriceTag = (props) => {
                 <span className=" price-title">{props.price}</span>
                 <span className="ml-10 price-sub">/ mês</span>
             </div>
+        </div>
+    )
+}
+
+const PromotionTag = (props) => {
+    return (
+        <div className="promotion-container d-flex just-content-center align-items-center">
+            <h3>Valores promocionais</h3>
         </div>
     )
 }

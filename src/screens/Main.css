@@ -138,3 +138,24 @@
 .custom-input:focus {
     outline: none;
 }
+
+.promotion-container {
+    width: 270px;
+    height: 50px;
+    background-color: var(--bulba-red);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    transform: rotate(-30deg);
+    user-select: none;
+}
+
+.promotion-container h3 {
+    color: var(--background-white);
+    text-align: center;
+}
+
+.position-relative {
+    position: relative;
+}
