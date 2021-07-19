@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "./Main.css"
 import { useHistory } from "react-router-dom"
 
@@ -13,6 +13,10 @@ const Main = (props) => {
 
     const [userName, setUserName] = useState("")
     const [userEmail, setUserEmail] = useState("")
+
+    useEffect(() => {
+        document.title = "Bulba day care"
+    }, [])
 
     const send = () => {
         if(!userName.trim()){
