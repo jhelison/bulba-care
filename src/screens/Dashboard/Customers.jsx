@@ -11,19 +11,29 @@ import { TableButton } from "./TableItem"
 import { FiUserPlus } from "react-icons/fi"
 
 import EditCustomerModal from "./EditCustomerModal"
+import { useHistory } from "react-router-dom"
 
 const Customers = (props) => {
+    const history = useHistory()
     const [isModal, setIsModal] = useState(false)
     const [customersList, setCustomersList] = useState([])
     const [workingGUID, setWorkingGUID] = useState(null)
 
     useEffect(() => {
+        exitIfNotName()
         const customers = localStorage.getItem("customers")
         if (customers === null) {
             localStorage.setItem("customers", JSON.stringify(tableData))
         }
         getItems()
     }, [])
+
+    const exitIfNotName = () => {
+        const username = localStorage.getItem("username")
+        if(!username){
+            history.push('/login')
+        }
+    }
 
     const getItems = () => {
         const customers = localStorage.getItem("customers")

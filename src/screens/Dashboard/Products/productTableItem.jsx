@@ -53,9 +53,9 @@ export function TableItem(props) {
                 </label>
 
                 <div className="d-flex just-content-end gap-10">
-                    <TableButton icon={<FiTrash2 size={20} />} />
-                    <TableButton
-                        icon={<FiEdit size={20} onClick={props.onEdit} />}
+                    <TableButton onClick={() => props.deleteProduct(props.guid)} icon={<FiTrash2 size={20} />} />
+                    <TableButton onClick={props.onEdit} onClick={() => props.onEdit(props.guid)}
+                        icon={<FiEdit size={20} />}
                     />
                 </div>
             </div>

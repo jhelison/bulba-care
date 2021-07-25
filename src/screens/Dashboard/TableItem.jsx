@@ -54,18 +54,20 @@ export function TableItem(props) {
 
                 <div className="d-flex just-content-end gap-10">
                     <TableButton
+                    onClick={() => props.deleteItem(props.guid)}
                         icon={
                             <FiTrash2
                                 size={20}
-                                onClick={() => props.deleteItem(props.guid)}
+                                
                             />
                         }
                     />
                     <TableButton
+                    onClick={() => props.onEdit(props.guid)}
                         icon={
                             <FiEdit
                                 size={20}
-                                onClick={() => props.onEdit(props.guid)}
+                                
                             />
                         }
                     />
