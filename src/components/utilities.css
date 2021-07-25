@@ -108,8 +108,14 @@
 .grid-2-1 {
     grid-template-columns: 2fr 1fr;
 }
+.grid-1-2 {
+    grid-template-columns: 1fr 2fr;
+}
 .grid-1-1 {
     grid-template-columns: 1fr 1fr;
+}
+.grid-2-1-1 {
+    grid-template-columns: 2fr 1fr 1fr;
 }
 
 .grid-gap-10 {
@@ -118,4 +124,8 @@
 
 .text-center {
     text-align: center;
+}
+
+.gap-10 {
+    gap: 10px;
 }

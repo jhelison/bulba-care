@@ -4,6 +4,10 @@ header {
     padding-left: 50px;
     padding-right: 50px;
     background-color: var(--background-white);
+
+    width: calc(100vw - var(--dash-aside-width));
+
+    position: absolute;
 }
 
 header h3 {

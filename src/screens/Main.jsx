@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react"
 import "./Main.css"
 import { useHistory } from "react-router-dom"
 
+import "../components/Components.css"
+
 import TextCard from "../components/TextCard"
 import TextCardSmall from "../components/TextCardSmall"
 
