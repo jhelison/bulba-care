@@ -1,6 +1,9 @@
 .login-content {
     width: 500px;
     height: 300px;
+    
+    padding: 20px;
+    border-radius: 5px;
 
     user-select: none;
 }

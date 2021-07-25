@@ -1,3 +1,16 @@
+.dashboard-header {
+    height: var(--header-height);
+    box-shadow: 0px 4px 11px -6px rgba(0, 0, 0, 0.25);
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--background-white);
+
+    margin-left: var(--dash-aside-width);
+    width: calc(100vw - var(--dash-aside-width) );
+
+    position: absolute;
+}
+
 .exit-button {
     height: 25px;
     width: 100px;

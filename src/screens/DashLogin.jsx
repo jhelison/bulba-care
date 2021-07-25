@@ -1,7 +1,27 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import './DashLogin.css'
 
+import { useHistory } from "react-router"
+
 const DashLogin = (props) => {
+    const [name, setName] = useState("")
+    const [password, setpassword] = useState("")
+
+    let history = useHistory()
+
+    useEffect(() => {
+        localStorage.clear()
+    }, [])
+
+    const makeLogin = () => {
+        if(!name.trim()){
+            window.alert("Nome não preenchido")
+            return
+        }
+        localStorage.setItem('username', name)
+        history.push('./dashboard')
+    }
+
     return (
         <div className="subscribed-content d-flex align-items-center just-content-center flex-column">
             <img
@@ -15,14 +35,19 @@ const DashLogin = (props) => {
                     className="custom-input mt-10"
                     placeholder="Usuário"
                     maxLength={30}
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                 ></input>
                 <input
                     className="custom-input mt-10"
                     placeholder="Senha"
                     type="password"
+                    value={password}
+                    onChange={(e) => setpassword(e.target.value)}
                 ></input>
                 <div
                     className="price-card-button bg-blue2 mt-10 d-flex just-content-center align-items-center"
+                    onClick={makeLogin}
                 >
                     <span className="price-sub">Acessar</span>
                 </div>

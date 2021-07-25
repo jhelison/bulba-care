@@ -5,7 +5,7 @@ header {
     padding-right: 50px;
     background-color: var(--background-white);
 
-    width: calc(100vw - var(--dash-aside-width));
+    width: calc(100vw);
 
     position: absolute;
 }
