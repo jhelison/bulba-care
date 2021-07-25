@@ -69,6 +69,10 @@ span {
     color: var(--text-gray);
 }
 
+hr {
+    width: 100%;
+}
+
 .bg-blue2 {
     background-color: var(--bulba-blue2);
 }
