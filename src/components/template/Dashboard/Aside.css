@@ -1,0 +1,61 @@
+.dash-aside {
+    position: absolute;
+    top: 0;
+    width: var(--dash-aside-width);
+    height: 100vh;
+    background-color: var(--bulba-green1);
+
+    box-sizing: border-box;
+}
+
+.dash-logo {
+    width: var(--dash-aside-width);
+    height: var(--dash-aside-width);
+    background-color: var(--bulba-green2);
+
+    color: var(--background-white);
+}
+
+.dash-aside-buttons-container {
+    width: 100%;
+    height: calc(100vh - var(--dash-aside-width));
+}
+
+.dash-aside-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    color: var(--text-gray);
+    cursor: pointer;
+}
+
+.dash-aside-button:hover {
+    background-color: var(--bulba-green2);
+    color: white;
+}
+
+.dash-aside-button-selected {
+    background-color: var(--bulba-green2);
+    color: white;
+}
+
+.aside-b-label{
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.mt-5 {
+   margin-top: 5px; 
+}
+
+.user-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    cursor: pointer;
+}

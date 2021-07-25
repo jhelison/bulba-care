@@ -1,0 +1,9 @@
+.dash-content {
+    position: absolute;
+    box-sizing: border-box;
+    margin-left: var(--dash-aside-width);
+    width: calc(100vw - var(--dash-aside-width));
+    height: calc(100vh - var(--header-height));
+
+    padding: 50px;
+}

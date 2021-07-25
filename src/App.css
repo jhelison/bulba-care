@@ -22,6 +22,8 @@
 
     --text-gray: #707070;
     --text-darker: #5A5A5A;
+
+    --dash-aside-width: 80px;
 }
 
 .App {
