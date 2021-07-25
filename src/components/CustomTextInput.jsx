@@ -12,6 +12,8 @@ const CustomTextInput = (props) => {
                 className={"custom-input pl-10" + (props.error ? " custom-input-error" : "")}
                 mask={props.mask}
                 maskChar={props.maskChar}
+                value={props.value}
+                onChange={props.onChange}
             />
         </div>
     )
